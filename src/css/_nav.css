@@ -1,0 +1,25 @@
+/* nav element */
+
+nav {
+  width: 100%;
+  padding: 1rem;
+  text-align: right;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--color-main);
+}
+
+nav .logo {
+  float: left;
+  font-size: 2rem;
+  margin-top: 0.2rem;
+}
+
+nav a {
+  margin: 0;
+  border: none;
+}
+
+.nav-link {
+  padding-left: 1rem;
+  display: inline-block;
+}

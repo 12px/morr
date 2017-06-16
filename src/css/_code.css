@@ -1,0 +1,28 @@
+/* code blocks */
+
+code {
+  margin: 0;
+  font-size: 90%;
+  border: 1px solid;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-transform: none;
+  padding: 0.2rem 0.5rem;
+  color: var(--color-main);
+  font-family: var(--font-mono);
+  background: color(var(--color-main) alpha(10%));
+}
+
+pre > code {
+  display: block;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+}
+
+.bg code {
+  color: var(--color-bg);
+  background: color(var(--color-bg) alpha(10%));
+}

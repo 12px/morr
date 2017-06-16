@@ -1,0 +1,27 @@
+/* grid */
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -1rem 1rem;
+  align-items: flex-start;
+}
+
+.row.ctr { align-items: center; }
+.row.btm { align-items: flex-end; }
+
+.col {
+  padding: 1rem;
+  flex: 1 0 100%;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+@media (--large-screen) {
+  .col {
+    flex: 1;
+    margin: 0 0 0 2%;
+  }
+
+  .row > :first-child { margin-left: 0; }
+}

@@ -1,0 +1,19 @@
+/* lists */
+
+ul { list-style: none; }
+ol { list-style: decimal inside; }
+li { margin-bottom: 1rem; }
+
+ul,
+ol {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  font-size: 90%;
+  margin: 1rem 0 1rem 3rem;
+}

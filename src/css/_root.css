@@ -1,0 +1,19 @@
+/* the variables */
+
+:root {
+  /* fonts */
+  --font-body: 'Muli', 'Arial', sans-serif;
+  --font-head: 'Ovo', serif;
+  --font-accent: 'Old Standard TT';
+  --font-mono: 'Consolas', 'Monaco', 'Menlo', monospace;
+
+  /* colors */
+  --color-bg: #fff;
+  --color-text: #000;
+  --color-main: #32a4f6;
+  --color-border: #ddd;
+}
+
+/* breakpoints */
+@custom-media --large-screen (width > 599px);
+@custom-media --small-screen (width < 600px);

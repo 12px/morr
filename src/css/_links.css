@@ -1,0 +1,68 @@
+/* link */
+
+a {
+  line-height: 1;
+  margin-bottom: -1px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-main);
+  border-bottom: 1px dotted;
+}
+
+a:hover {
+  opacity: 0.8;
+  color: var(--color-main);
+}
+
+/* buttons */
+.btn,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  height: 3.5rem;
+  cursor: pointer;
+  padding: 0 4rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  color: var(--color-bg);
+  background: var(--color-main);
+  border: 1px solid var(--color-main);
+  text-align: center;
+  line-height: 3.3rem;
+  white-space: nowrap;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus {
+  opacity: 0.8;
+  color: var(--color-bg);
+}
+
+.btn.otln,
+button.otln,
+input[type="submit"].otln,
+input[type="button"].otln,
+input[type="reset"].otln {
+  background: transparent;
+  color: var(--color-main);
+}
+
+.btn.otln:hover,
+button.otln:hover,
+input[type="submit"].otln:hover,
+input[type="button"].otln:hover,
+input[type="reset"].otln:hover { color: var(--color-main); }

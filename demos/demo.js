@@ -45,5 +45,10 @@ var demo = new Vue({
   el: '#morr',
   data: {
     docs: docs
+  },
+  methods: {
+    showAside: function() {
+      rr('aside').toggle('active')
+    }
   }
 });

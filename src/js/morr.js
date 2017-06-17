@@ -5,7 +5,22 @@ const morr = (() => {
   'use strict';
 
   // constructor
-  function morr(selector) {}
+  function morr(selector) {
+    // keep a record of state booleans
+    this.go = null;
+
+    // check our selector
+    let type = Array.isArray(selector) ? 'array' : typeof selector;
+    // get the selector
+    this.sel = type == "string" ? selector : "local";
+
+    // get the element
+    this.el = ((sel) => {
+      if (type == "string") return document.querySelectorAll(selector);
+      if (type == "array") return selector;
+      return [selector];
+    })(selector)
+  }
 
   // library
   morr.prototype = {
@@ -56,8 +71,8 @@ const morr = (() => {
 
       this.do((el) => {
         cl.forEach((name) => {
-          if (el.classList) el.classList.add(cl[name]);
-          else el.className += ' ' + cl[name];
+          if (el.classList) el.classList.add(name);
+          else el.className += ' ' + name;
         });
       });
 

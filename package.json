@@ -1,6 +1,6 @@
 {
   "name": "morr",
-  "version": "0.5.0",
+  "version": "0.0.0",
   "description": "A CSS/JS Starting Point",
   "homepage": "http://morr.12px.io",
   "scripts": {
@@ -16,11 +16,14 @@
     "url": "https://github.com/12px/morr/issues"
   },
   "devDependencies": {
+    "babel-core": "^6.25.0",
     "cssnano": "^3.10.0",
     "fly": "^2.0.6",
+    "fly-babel": "^2.1.1",
     "fly-esnext": "^2.0.1",
     "fly-postcss": "hzlmn/fly-postcss#v2",
     "fly-rename": "^0.1.1",
+    "fly-uglify": "^2.1.1",
     "fly-watch": "^1.1.1",
     "postcss": "^6.0.2",
     "postcss-cssnext": "^2.11.0",

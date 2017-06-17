@@ -51,6 +51,13 @@ docs.grid = `
     <div class="col">4</div>
   </div>
 `;
+docs.aside = `
+  <aside> ... </aside>
+  <aside class="right"></aside>
+  <aside class="active">
+    Visible Content
+  </aside>
+`;
 docs.form = `
   <form>
     <div class="row">

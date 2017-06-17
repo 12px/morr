@@ -1,0 +1,20 @@
+/* aside, sidebar */
+
+aside {
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  max-width: 40rem;
+  padding: 5vh 3vw;
+  box-sizing: border-box;
+  background: var(--color-bg);
+}
+aside:not(.active) { display: none; }
+
+aside.right {
+  right: 0;
+  border-left: 1px solid var(--color-border);
+}
+aside:not(.right) { border-right: 1px solid var(--color-border); }

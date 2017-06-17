@@ -10,7 +10,7 @@
   <meta name="description" content="Don't spend time resetting and recoding a framework. Just start here.">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli|Old+Standard+TT|Ovo">
-  <link rel="stylesheet" href="./dist/morr.min.css">
+  <link rel="stylesheet" href="../dist/morr.min.css">
   <style>
     .but { margin: 2rem 0; }
     .morr { font-family: 'Old Standard TT'; font-size: 125%; font-weight: 700; }
@@ -22,11 +22,12 @@
 </head>
 
 <body>
+<div id="morr">
 
   <!-- Header Panel -->
-  <header class="panel">
-    <h1 class="splash title">morr</h1>
-    <h4 class="ta title">/môr/ A CSS &amp; JS Starting Point</h4>
+  <header class="panel bg">
+    <h1 class="title"><a href="../">morr.js</a></h1>
+    <h4 class="ta title">Quick Docs &amp; Demo</h4>
 
     <p>
       <span class="morr">morr</span> was inspired by frameworks like
@@ -42,10 +43,17 @@
 
     <p>
       <a href="http://github.com/12px/morr" class="btn">Github</a>
-      <a href="demos/css.html" class="btn otln">CSS Demo</a>
-      <a href="demos/js.html" class="btn otln">JS Demo</a>
+      <a href="./css.html" class="btn otln">CSS Demo</a>
     </p>
   </header>
+
+</div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/vue"></script>
+  <script src="../dist/morr.min.js"></script>
+  <script src="./docs.js"></script>
+  <script src="./demo.js"></script>
 
 </body>
 </html>

@@ -55,6 +55,32 @@ article { margin: 5rem 0; }
 .bd.bb { border-bottom-style: dotted; }
 .bd.bt { border-top-style: dotted; }
 
+/* positioning */
+.abstl {
+  top: 5vh;
+  left: 5vw;
+}
+
+.abstr {
+  top: 5vh;
+  right: 5vw;
+}
+
+.absbl {
+  bottom: 5vh;
+  left: 5vw;
+}
+
+.absbr {
+  bottom: 5vh;
+  right: 5vw;
+}
+
+.abstl,
+.abstr,
+.absbr,
+.absbl { position: absolute; }
+
 .mute { opacity: 0.6; }
 
 /* responsive */

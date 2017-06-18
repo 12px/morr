@@ -5,6 +5,7 @@
   flex-flow: row wrap;
   margin: 0 -1rem 1rem;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .row.ctr { align-items: center; }
@@ -16,6 +17,7 @@
   margin: 1rem 0;
   box-sizing: border-box;
 }
+.col.c2 { flex: 2; }
 
 @media (--large-screen) {
   .col {

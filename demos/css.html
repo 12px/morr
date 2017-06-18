@@ -29,17 +29,7 @@
     <h1 class="title"><a href="../">morr.css</a></h1>
     <h4 class="ta title">Quick Docs &amp; Demo</h4>
 
-    <p>
-      <span class="morr">morr</span> was inspired by frameworks like
-      <a href="http://getskeleton.com" target="_blank">getskeleton</a>,
-      <a href="http://milligram.io" target="_blank">milligram</a>,
-      <a href="http://tachyons.io" target="_blank">tachyons</a>, and
-      <a href="http://usewing.ml" target="_blank">wing</a>
-    </p>
-
-    <p>
-      Have you ever started using a framework to make things easier - only to notice you're consistently overwriting styles? Or maybe you went with a super-micro framework, and now you're writing a bunch of utility classes you should aready have. Welcome to <strong>morr</strong>, a minimalist starting point for frontend development. Beautiful basic styling makes it easy to extend and use for nearly everything.
-    </p>
+    <p>Welcome to the CSS Demo. Scroll down to see this framework in action.</p>
 
     <p>
       <a href="http://github.com/12px/morr" class="btn">Github</a>
@@ -51,7 +41,7 @@
   <aside>
     <h3 class="title">
       Aside
-      <a href="#" class="fr" @click="showAside">x</a>
+      <button class="fr" @click="showAside">x</button>
     </h3>
     <p>
       The Aside is hidden by default, and shown when the <code>active</code> class is added. By default it is anchored to the left, but by adding <code>.right</code> it will adjust accordingly.
@@ -62,7 +52,7 @@
   <!-- Quick Docs -->
   <section id="docs">
 
-    <quick-doc head="Structure" :code="docs.structure">
+    <css-doc head="Structure" :code="docs.structure">
       <span class="morr">morr</span> uses the standard html5 structure to organize content.
       <p>
          Start the page off with a <strong><em>header</em></strong> element. Break your page up with a few <strong><em>section</em></strong> elements, and wrap it up with the handy <strong><em>footer</em></strong>.
@@ -70,15 +60,15 @@
        <p>
          Also featured are styling for the <strong><em>nav</em></strong> element, and off-screen sidebar support with <strong><em>aside</em></strong>. Don't go overboard with  <strong><em>section</em></strong> elements as they use vh and vw for padding. Too many means increased scrolling. Use <strong><em>article</em></strong> to break up sections further.
       </p>
-    </quick-doc>
+    </css-doc>
 
-    <quick-doc head="Panels" :code="docs.panels">
+    <css-doc head="Panels" :code="docs.panels">
       <p>
         If you add <code>.panel</code> to any <code>header</code> or <code>section</code> element, it will expand be full width. You can see this in action at the top of this page. Also, you can add <code>.bg</code> to any element to add a bg accent. This can be seen in the <em>Quick Docs</em> title section above.
       </p>
-    </quick-doc>
+    </css-doc>
 
-    <quick-doc head="Nav" :code="docs.nav">
+    <css-doc head="Nav" :code="docs.nav">
       <nav slot="subtitle">
         <a href="#" class="logo">Logo</a>
         <a href="#" class="nav-link">Link 1</a>
@@ -95,9 +85,15 @@
       <p>
         It expands to full width. Throw it in the root of your body, and it will go fill the viewport. Throw it in an element, and it will be contained inside the element.
       </p>
-    </quick-doc>
+    </css-doc>
 
-    <quick-doc head="Typography" :code="docs.typography">
+    <css-doc head="Aside" :code="docs.aside">
+      <h5 name="subtitle">Off-Screen Sidebar</h5>
+      <p>Add class <code>.active</code> to make visible.</p>
+      <p><button class="otln" @click="showAside">Show Aside</button></p>
+    </css-doc>
+
+    <css-doc head="Typography" :code="docs.typography">
       <p style="font-size: 2rem;">
         <span class="th">Vollkorn is for headers.</span> <br>
         <strong>Muli</strong> is a great body font. <br>
@@ -124,7 +120,7 @@
         <li class="tr bt pt"> <code>.tr</code> Right Aligned Text </li>
       </ul>
       <blockquote>A blockquote</blockquote>
-    </quick-doc>
+    </css-doc>
     <!-- Typography, con't - Paragraph -->
     <div class="row">
       <div class="col">
@@ -181,7 +177,7 @@
       </div>
     </article>
 
-    <quick-doc head="Forms" :code="docs.form">
+    <css-doc head="Forms" :code="docs.form">
       <form>
         <div class="row">
           <div class="col">
@@ -239,9 +235,9 @@
           <input type="submit" class="otln" value="input.otln">
         </div>
       </div>
-    </quick-doc>
+    </css-doc>
 
-    <quick-doc head="Lists" :code="docs.lists">
+    <css-doc head="Lists" :code="docs.lists">
       <div class="row">
         <div class="col">
           <ul>
@@ -266,18 +262,18 @@
           </ol>
         </div>
       </div>
-    </quick-doc>
+    </css-doc>
 
-    <quick-doc head="Code" :code="docs.code">
+    <css-doc head="Code" :code="docs.code">
       <p>
         A lot of pople need to display code. I'm doing it every two pixels on this page. You can do inline clode with just the <code>code</code> block. That was it, just there. Nifty.
       </p>
       <p>
         Wrap the <code>code</code> element in a <code>pre</code> element, and you get that preformatted goodness.
       </p>
-    </quick-doc>
+    </css-doc>
 
-    <quick-doc head="Tables" :code="docs.table">
+    <css-doc head="Tables" :code="docs.table">
       <table class="u-full-width">
         <thead>
           <tr>
@@ -316,7 +312,7 @@
           </tr>
         </tbody>
       </table>
-    </quick-doc>
+    </css-doc>
 
     <article id="utilities">
       <h3 class="title">Utilities</h3>

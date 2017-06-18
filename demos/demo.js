@@ -1,7 +1,7 @@
 /* additional scripts for demo page */
 
 // doc template
-var qdoc = `<article :id="head">
+var cssdoc = `<article :id="head">
   <h2 class="title">{{ head }}</h2>
   <slot name="subtitle"></slot>
   <div class="row">
@@ -14,6 +14,15 @@ var qdoc = `<article :id="head">
   </div>
 </article>`;
 
+var jsdoc = `<div class="row ctr">
+  <div class="col">
+    <h5 class="title"><code>{{ method}}</code></h5>
+  </div>
+  <div class="col c2">
+    <slot></slot>
+  </div>
+</div>`;
+
 // but template
 var faq = `<article class="but">
   <h3 class="title">...{{ wait }}</h3>
@@ -22,11 +31,16 @@ var faq = `<article class="but">
   </p>
 </article>`;
 
-// Define quick-doc
-Vue.component('quick-doc', {
+// Define quick-docs
+Vue.component('css-doc', {
   props: ['head', 'code'],
-  template: qdoc
+  template: cssdoc
 });
+
+Vue.component('js-doc', {
+  props: ['method'],
+  template: jsdoc
+})
 
 // Define mini-doc
 Vue.component('mini-doc', {
@@ -48,7 +62,7 @@ var demo = new Vue({
   },
   methods: {
     showAside: function() {
-      rr('aside').toggle('active')
+      $('aside').toggle('active')
     }
   }
 });

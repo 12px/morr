@@ -43,6 +43,13 @@ article { margin: 5rem 0; }
 .pb { padding-bottom: 1rem; }
 .pr { padding-right: 1rem; }
 
+/* margin */
+.ma { margin: 1rem; }
+.mt { margin-top: 1rem; }
+.ml { margin-left: 1rem; }
+.mb { margin-bottom: 1rem; }
+.mr { margin-right: 1rem; }
+
 /* border */
 .ba { border: 1px solid; }
 .bl { border-left: 1px solid; }

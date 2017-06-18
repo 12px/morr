@@ -29,23 +29,89 @@
     <h1 class="title"><a href="../">morr.js</a></h1>
     <h4 class="ta title">Quick Docs &amp; Demo</h4>
 
-    <p>
-      <span class="morr">morr</span> was inspired by frameworks like
-      <a href="http://getskeleton.com" target="_blank">getskeleton</a>,
-      <a href="http://milligram.io" target="_blank">milligram</a>,
-      <a href="http://tachyons.io" target="_blank">tachyons</a>, and
-      <a href="http://usewing.ml" target="_blank">wing</a>
-    </p>
-
-    <p>
-      Have you ever started using a framework to make things easier - only to notice you're consistently overwriting styles? Or maybe you went with a super-micro framework, and now you're writing a bunch of utility classes you should aready have. Welcome to <strong>morr</strong>, a minimalist starting point for frontend development. Beautiful basic styling makes it easy to extend and use for nearly everything.
-    </p>
+    <p>Welcome to the JS Demo. Scroll down to see this framework in action.</p>
 
     <p>
       <a href="http://github.com/12px/morr" class="btn">Github</a>
       <a href="./css.html" class="btn otln">CSS Demo</a>
     </p>
   </header>
+
+  <section id="intro">
+    <h3 class="title">morr.js use</h3>
+    <h5 class="mute"> (Chain Your Events)</h5>
+    <p>
+      <span class="morr">morr</span> is meant to be chained, like jQuery or similar libraries. So, most events will return itself instead of a boolean value. <code>$(el).is('active')</code> returns the object, not a state.
+    </p>
+    <p><code>$(el).is('active').add('is-active')</code></p>
+    <p>
+      You can chain states with actions, and they will be fired accordingly. In the above example, the <code>.is-active</code> class will only be added if <code>el</code> already contains the <code>.active</code>
+    </p>
+  </section>
+
+  <section id="docs">
+
+    <h4>Quick Docs</h4>
+
+    <js-doc method="var el = $(el);">
+      Returns a new <code>morr</code> object, with the element passed, and available for manipulation.
+    </js-doc>
+
+    <h5 class="mt mb">States</h5>
+
+    <js-doc method="$el.is(name)">
+      Returns <code>true</code> if <code>el</code> has <code>.name</code>
+    </js-doc>
+
+    <js-doc method="$el.isnt(name)">
+      Returns <code>true</code> if <code>el</code> does NOT have <code>.name</code>
+    </js-doc>
+
+    <js-doc method="$el.holds(name)">
+      Returns <code>true</code> if <code>el</code> does NOT have <code>.name</code>
+    </js-doc>
+
+    <h5 class="mt mb">Methods</h5>
+
+    <js-doc method="$el.add(name)">
+      Adds class <code>name</code> to the element.
+    </js-doc>
+
+    <js-doc method="$el.remove(name)">
+      Revoes class <code>name</code> from the element.
+    </js-doc>
+
+    <js-doc method="$el.toggle(name)">
+      Toggles class <code>name</code> on the element.
+    </js-doc>
+
+    <js-doc method="$el.delete(callback)">
+      Deletes the element. Fires <code>callback()</code>
+    </js-doc>
+
+    <js-doc method="$el..then(yes, no)">
+      If you need to add more complicated javascript to your chain, you can use the <code>then</code> method.
+    </js-doc>
+    <div class="row">
+      <div class="col">
+        <mini-doc :code="docs.then"></mini-doc>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="but" class="bg">
+    <h1>But wait...</h1>
+
+    <but wait="can I use a frontend framework with morr.css?">
+      Absolutely. I'm using <strong>Vue.js</strong> to build this page. It only styles basic elements, drop the CSS wherever you want. Go nuts!
+    </but>
+
+    <but wait="what about morr.js?">
+      The javascript here is literally just a tool to add and remove classes. If you're using jQuery or something similar, you probably don't need it at all.
+    </but>
+
+  </section>
 
 </div>
 

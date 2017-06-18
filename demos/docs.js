@@ -172,3 +172,13 @@ docs.helpers = `
   .bd.bb { border-bottom-style: dotted; }
   .bd.bt { border-top-style: dotted; }
 `;
+docs.then = `
+  var yes = function() {
+    console.log('is active');
+  };
+  var no = function() {
+    console.log('is not active')
+  };
+
+  $(el).is('active').then(yes, no);
+`;

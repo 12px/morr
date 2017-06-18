@@ -119,6 +119,8 @@ const morr = (() => {
 
 })();
 
-const rr = function domorr(selector) {
+// Let's be real, if you're using jQuery,
+// you have no need for this script.
+const $ = function domorr(selector) {
   return new morr(selector);
 };

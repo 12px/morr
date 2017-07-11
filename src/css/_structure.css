@@ -3,19 +3,20 @@
 header,
 section,
 footer {
-  min-width: 80vw;
+  width: 100vw;
   padding: 10vh 10vw;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
 article { margin: 5rem 0; }
 
 /* full height panel */
-.panel { min-height: 80vh; }
+.panel { height: 100vh; }
 
 /* colored bg */
 .bg {

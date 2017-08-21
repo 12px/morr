@@ -3,7 +3,7 @@
 header,
 section,
 footer {
-  width: 100vw;
+  width: 100%;
   padding: 10vh 10vw;
   position: relative;
   display: flex;

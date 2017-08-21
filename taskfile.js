@@ -9,14 +9,14 @@ const plugins = [
 module.exports = {
 
   * build (task) {
-    yield task.source('src/css/morr.css')
-          .postcss({ from: 'src/css/morr.css', plugins: plugins })
+    yield task.source('src/morr.css')
+          .postcss({ from: 'src/morr.css', plugins: plugins })
           .rename({ suffix: '.min' }).target('dist');
   },
 
   * default (task) {
     yield task.start('build');
-    yield task.watch('src/css/*.css', 'build');
+    yield task.watch('src/*.css', 'build');
   }
 
 };

@@ -1,5 +1,3 @@
-/* code blocks */
-
 code {
   margin: 0;
   font-size: 90%;
@@ -8,9 +6,9 @@ code {
   white-space: nowrap;
   text-transform: none;
   padding: 0.2rem 0.5rem;
-  color: var(--color-main);
-  font-family: var(--font-mono);
-  background: color(var(--color-main) alpha(10%));
+  color: @color-nice;
+  font-family: @font-mono;
+  background: fadeout(@color-nice, 10%)
 }
 
 pre > code {
@@ -23,6 +21,6 @@ pre > code {
 }
 
 .bg code {
-  color: var(--color-bg);
-  background: color(var(--color-bg) alpha(10%));
+  color: @color-bg;
+  background: fadeout(@color-bg, 10%);
 }

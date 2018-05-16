@@ -8,7 +8,7 @@ h5,
 h6,
 .th {
   margin-top: 0;
-  font-family: var(--font-head);
+  font-family: @font-head;
 }
 
 h1,
@@ -59,19 +59,19 @@ blockquote {
   font-size: 2rem;
   border-left: 3px solid;
   padding: 1rem 0 1rem 3rem;
-  font-family: var(--font-accent);
+  font-family: @font-nice;
 }
 
 /* utility */
 .tr { text-align: right; }
 .tc { text-align: center; }
-.ta { font-family: var(--font-accent); }
+.ta { font-family: @font-nice; }
 .ttc { text-transform: capitalize; }
 .ttu { text-transform: uppercase; }
 .txl { font-size: 1.7rem; }
 
 /* responsive */
-@media (--large-screen) {
+@media @large-screen {
   h1 { font-size: 5rem; }
   h2 { font-size: 4.3rem; }
   h3 { font-size: 3.6rem; }

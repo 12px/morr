@@ -5,13 +5,13 @@ a {
   margin-bottom: -1px;
   display: inline-block;
   text-decoration: none;
-  color: var(--color-main);
+  color: @color-nice;
   border-bottom: 1px dotted;
 }
 
 a:hover {
   opacity: 0.8;
-  color: var(--color-main);
+  color: @color-nice;
 }
 
 /* buttons */
@@ -28,9 +28,9 @@ input[type="reset"] {
   display: inline-block;
   box-sizing: border-box;
   border-radius: 0.25rem;
-  color: var(--color-bg);
-  background: var(--color-main);
-  border: 1px solid var(--color-main);
+  color: @color-bg;
+  background: @color-nice;
+  border: 1px solid @color-nice;
   text-align: center;
   line-height: 3.3rem;
   white-space: nowrap;
@@ -50,7 +50,7 @@ input[type="button"]:focus,
 input[type="reset"]:hover,
 input[type="reset"]:focus {
   opacity: 0.8;
-  color: var(--color-bg);
+  color: @color-bg;
 }
 
 .btn.otln,
@@ -59,14 +59,14 @@ input[type="submit"].otln,
 input[type="button"].otln,
 input[type="reset"].otln {
   background: transparent;
-  color: var(--color-main);
+  color: @color-nice;
 }
 
 .btn.otln:hover,
 button.otln:hover,
 input[type="submit"].otln:hover,
 input[type="button"].otln:hover,
-input[type="reset"].otln:hover { color: var(--color-main); }
+input[type="reset"].otln:hover { color: @color-nice; }
 
 .bg .btn,
 .bg .btn:hover,
@@ -78,9 +78,9 @@ input[type="reset"].otln:hover { color: var(--color-main); }
 .bg input[type="button"]:hover,
 .bg input[type="reset"],
 .bg input[type="reset"]:hover {
-  color: var(--color-main);
-  border-color: var(--color-bg);
-  background-color: var(--color-bg);
+  color: @color-nice;
+  border-color: @color-bg;
+  background-color: @color-bg;
 }
 
 .bg .btn.otln,
@@ -89,6 +89,6 @@ input[type="reset"].otln:hover { color: var(--color-main); }
 .bg input[type="button"].otln,
 .bg input[type="reset"].otln {
   background: transparent;
-  color: var(--color-bg);
-  border-color: var(--color-bg);
+  color: @color-bg;
+  border-color: @color-bg;
 }

@@ -1,0 +1,33 @@
+/* morr.css
+/* a starting point */
+
+/* variables */
+@font-body:    'Muli', 'Arial', sans-serif;
+@font-head:    'Ovo', serif;
+@font-nice:    'Old Standard TT';
+@font-mono:    'Consolas', 'Monaco', 'Menlo', monospace;
+
+@color-bg:      #ffffff;
+@color-text:    #000000;
+@color-nice:    #32a4f6;
+
+@small-screen: ~"screen and (max-width: 599px)";
+@large-screen: ~"screen and (min-width: 600px)";
+
+/* generated variables */
+@color-border:  mix(@color-bg, @color-text, 75%);
+
+
+/* imported files */
+
+@import 'base';
+@import 'grid';
+@import 'structure';
+@import 'typography';
+@import 'nav';
+@import 'aside';
+@import 'links';
+@import 'forms';
+@import 'lists';
+@import 'code';
+@import 'tables';

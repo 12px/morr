@@ -1,5 +1,5 @@
 # morr
-A CSS/JS Starting Point
+A CSS Starting Point
 
 
 ### Installation
@@ -7,7 +7,10 @@ A CSS/JS Starting Point
 `npm install morr`  
 
 ### Usage
-Include `morr.min.css` and/or `morr.min.js` in your setup and you're good to go.  
 
-### [Quick Docs](http://morr.12px.io)
-Available at [morr.12px.io](http://morr.12px.io)
+Font: `<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,600">`  
+
+Include `morr.min.css` in your setup and you're good to go.  
+
+### [Quick Docs](http://12px.io/morr)
+Available at [morr.12px.io](http://12px.io/morr)

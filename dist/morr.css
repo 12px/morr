@@ -62,7 +62,12 @@ article {
 }
 /* full height panel */
 .panel {
-  height: 100vh;
+  min-height: 100vh;
+}
+/* container */
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 /* colored bg */
 .bg {
@@ -253,6 +258,12 @@ blockquote {
   border-left: 3px solid;
   padding: 1rem 0 1rem 3rem;
 }
+/* make small smaller */
+small {
+  font-size: 80%;
+  padding: 0 0.1em;
+  display: inline-block;
+}
 /* utility */
 .clr {
   color: #32a4f6;
@@ -269,8 +280,11 @@ blockquote {
 .ttu {
   text-transform: uppercase;
 }
-.txl {
-  font-size: 1.7rem;
+.twd {
+  font-weight: 600;
+}
+.tnr {
+  font-weight: 300;
 }
 /* responsive */
 @media screen and (min-width: 600px) {
@@ -291,6 +305,9 @@ blockquote {
   }
   h6 {
     font-size: 1.8rem;
+  }
+  small {
+    font-size: 65%;
   }
   .splash {
     font-size: 10rem;

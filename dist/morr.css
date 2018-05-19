@@ -12,7 +12,7 @@ html {
 body {
   margin: 0;
   letter-spacing: 0.01em;
-  font: 400 1.5em/1.6 'Muli', 'Arial', sans-serif;
+  font: 300 1.5em/1.6 'Raleway', 'Arial', sans-serif;
 }
 .row {
   display: flex;
@@ -66,12 +66,12 @@ article {
 }
 /* colored bg */
 .bg {
-  color: var(--color-bg);
-  background-color: var(--color-main);
+  color: #ffffff;
+  background-color: #32a4f6;
 }
 .bg a,
 .bg a:hover {
-  color: var(--color-bg);
+  color: #ffffff;
 }
 /* utilities */
 .fl {
@@ -202,7 +202,6 @@ h5,
 h6,
 .th {
   margin-top: 0;
-  font-family: 'Ovo', serif;
 }
 h1,
 h2,
@@ -232,7 +231,7 @@ h5 {
   letter-spacing: -0.05rem;
 }
 h6 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   letter-spacing: 0;
 }
@@ -253,17 +252,16 @@ blockquote {
   font-size: 2rem;
   border-left: 3px solid;
   padding: 1rem 0 1rem 3rem;
-  font-family: 'Old Standard TT';
 }
 /* utility */
+.clr {
+  color: #32a4f6;
+}
 .tr {
   text-align: right;
 }
 .tc {
   text-align: center;
-}
-.ta {
-  font-family: 'Old Standard TT';
 }
 .ttc {
   text-transform: capitalize;
@@ -292,7 +290,7 @@ blockquote {
     font-size: 2.4rem;
   }
   h6 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .splash {
     font-size: 10rem;
@@ -540,7 +538,6 @@ table {
 }
 thead {
   font-variant: small-caps;
-  font-family: 'Old Standard TT';
 }
 th,
 td {

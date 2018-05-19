@@ -352,10 +352,10 @@ aside:not(.active) {
 }
 aside.right {
   right: 0;
-  border-left: 1px solid #bfbfbf;
+  border-left: 1px solid #d9d9d9;
 }
 aside:not(.right) {
-  border-right: 1px solid #bfbfbf;
+  border-right: 1px solid #d9d9d9;
 }
 /* link */
 a {
@@ -461,7 +461,7 @@ input[type="password"] {
   box-sizing: border-box;
   border-radius: 0.25rem;
   background-color: #ffffff;
-  border: 1px solid #bfbfbf;
+  border: 1px solid #d9d9d9;
 }
 select:focus,
 textarea:focus,
@@ -536,7 +536,7 @@ code {
   padding: 0.2rem 0.5rem;
   color: #32a4f6;
   font-family: 'Consolas', 'Monaco', 'Menlo', monospace;
-  background: rgba(50, 164, 246, 0.9);
+  background: rgba(50, 164, 246, 0.1);
 }
 pre > code {
   display: block;
@@ -548,7 +548,7 @@ pre > code {
 }
 .bg code {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
 }
 table {
   width: 100%;
@@ -560,7 +560,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #bfbfbf;
+  border-bottom: 1px solid #d9d9d9;
 }
 th:first-child,
 td:first-child {

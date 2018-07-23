@@ -11,36 +11,34 @@ docs.structure = `
   <footer></footer>
 `;
 docs.typography = `
-  <span>Muli</span>
-  <span class="th">Vollkorn</span>
-  <span class="ta">Old Standard TT</span>
+  <span>Regular Text</span>
 
   <a href="#">Simple Link</a>
   <strong>Bold Text</strong>
   <em>Italicized Text</em>
   <u>Underlined Text</u>
 
-  <span class="ttc">Capitalized</span>
-  <span class="ttu">Uppercase</span>
-  <span class="tc">Centered</span>
-  <span class="tr">Right Aligned</span>
+  <span class="txtt-c">Capitalized</span>
+  <span class="txtt-u">Uppercase</span>
+  <span class="txt-c">Centered</span>
+  <span class="txt-r">Right Aligned</span>
 
   <blockquote>A Blockquote </blockquote>
 
   <p> Lorem Ipsum... </p>
   <p class="wide"> Lorem Ipsum... </p>
   <p class="narr"> Lorem Ipsum... </p>
-  <p class="mw"> Lorem Ipsum... </p>
+  <p class="w-mw"> Lorem Ipsum... </p>
 `;
 docs.panels = `
   <header class="panel"></header>
-  <section class="bg"></section>
+  <section class="accent"></section>
 `;
 docs.nav = `
-  <nav class="bg">
+  <nav class="accent">
     <a href="#" class="logo">Logo</a>
-    <a href="nav-link">Link 1</a>
-    <a href="nav-link">Link 2</a>
+    <a href="link">Link 1</a>
+    <a href="link">Link 2</a>
   </nav>
 `;
 docs.grid = `
@@ -132,45 +130,57 @@ docs.table = `
 `;
 docs.utilities = `
   /* utilities */
-  .fl { float: left; }
-  .fr { float: right; }
-  .fw { width: 100%; }
-  .mw { max-width: 100%; }
-  .ib { display: inline-block; }
+  .fl-l { float: left; }
+  .fl-r { float: right; }
+  .d-ib { display: inline-block; }
 
-  .fw,
-  .mw { box-sizing: border-box; }
-
-  .mute { opacity: 0.6; }
+  /* positioning */
+  .abs { position: absolute; }
+  .abs.tl { top:    5vh;  left:  5vw; }
+  .abs.tr { top:    5vh;  right: 5vw; }
+  .abs.bl { bottom: 5vh;  left:  5vw; }
+  .abs.br { bottom: 5vh;  right: 5vw; }
 
   /* responsive */
   @media (--small-screen) {
-    .hsm { display: none; }
+    .h-sm { display: none; }
   }
 
   @media (--large-screen) {
-    .hlg { display: none; }
+    .h-lg { display: none; }
   }
 `;
 docs.helpers = `
   /* padding */
-  .pa { padding: 1rem; }
-  .pt { padding-top: 1rem; }
-  .pl { padding-left: 1rem; }
-  .pb { padding-bottom: 1rem; }
-  .pr { padding-right: 1rem; }
+  .p-a { padding: 1em; }
+  .p-t { padding-top: 1em; }
+  .p-l { padding-left: 1em; }
+  .p-b { padding-bottom: 1em; }
+  .p-r { padding-right: 1em; }
+
+  /* margin */
+  .m-a { margin: 1em; }
+  .m-t { margin-top: 1em; }
+  .m-l { margin-left: 1em; }
+  .m-b { margin-bottom: 1em; }
+  .m-r { margin-right: 1em; }
 
   /* border */
-  .ba { border: 1px solid; }
-  .bl { border-left: 1px solid; }
-  .bt { border-top: 1px solid; }
-  .bb { border-bottom: 1px solid; }
-  .br { border-right: 1px solid; }
-  .bd.ba { border-style: dotted; }
-  .bd.bl { border-left-style: dotted; }
-  .bd.br { border-right-style: dotted; }
-  .bd.bb { border-bottom-style: dotted; }
-  .bd.bt { border-top-style: dotted; }
+  .dot { border-style: dotted; }
+  .b-a { border: 1px solid; }
+  .b-l { border-left: 1px solid; }
+  .b-t { border-top: 1px solid; }
+  .b-b { border-bottom: 1px solid; }
+  .b-r { border-right: 1px solid; }
+  
+  /* width */
+  .w-20  { width: 20%; }
+  .w-40  { width: 40%; }
+  .w-50  { width: 50%; }
+  .w-60  { width: 60%; }
+  .w-80  { width: 80%; }
+  .w-100 { width: 100%; }
+  .w-mw  { max-width: 100%; }
 `;
 docs.then = `
   var yes = function() {

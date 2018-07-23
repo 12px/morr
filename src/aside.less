@@ -8,11 +8,17 @@ aside {
   padding: 5vh 3vw;
   box-sizing: border-box;
   background: @color-bg;
-}
-aside:not(.active) { display: none; }
 
-aside.right {
-  right: 0;
-  border-left: 1px solid @color-border;
+  &.right {
+    right: 0;
+    border-left: 1px solid @color-border;
+  }
+
+  &:not(.right) {
+    border-right: 1px solid @color-border;
+  }
+
+  &:not(.active) {
+    display: none;
+  }
 }
-aside:not(.right) { border-right: 1px solid @color-border; }

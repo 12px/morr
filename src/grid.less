@@ -1,21 +1,23 @@
 .row {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 -1rem 1rem;
+  margin: 0 -@padding-element @padding-element;
   align-items: flex-start;
   justify-content: space-between;
-}
 
-.row.ctr { align-items: center; }
-.row.btm { align-items: flex-end; }
+  &.ctr { align-items: center; }
+  &.end { align-items: flex-end; }
+}
 
 .col {
-  padding: 1rem;
+  padding: @padding-element;
   flex: 1 0 100%;
-  margin: 1rem 0;
+  margin: @padding-element 0;
   box-sizing: border-box;
+
+  &.wide { flex: 2; } 
+  &.none { flex: none; }
 }
-.col.c2 { flex: 2; }
 
 @media @large-screen {
   .col {
@@ -23,5 +25,7 @@
     margin: 0 0 0 2%;
   }
 
-  .row > :first-child { margin-left: 0; }
+  .row > :first-child { 
+    margin-left: 0; 
+  }
 }

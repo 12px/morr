@@ -25,7 +25,7 @@
 <div id="morr">
 
   <!-- Header Panel -->
-  <header class="bg panel">
+  <header class="accent panel">
     <h1 class="splash title">morr</h1>
     <h4 class="ta title">/môr/ A CSS Starting Point</h4>
 
@@ -61,23 +61,23 @@
 
     <css-doc head="Panels" :code="docs.panels">
       <p>
-        If you add <code>.panel</code> to any <code>header</code> or <code>section</code> element, it will expand be full width. You can see this in action at the top of this page. Also, you can add <code>.bg</code> to any element to add a bg accent. This can be seen in the <em>But Wait</em> section at the bottom of the page.
+        If you add <code>.panel</code> to any <code>header</code> or <code>section</code> element, it will expand be full width. You can see this in action at the top of this page. Also, you can add <code>.accent</code> to any element to add a bg accent. This can be seen in the <em>But Wait</em> section at the bottom of the page.
       </p>
     </css-doc>
 
     <css-doc head="Nav" :code="docs.nav">
       <nav slot="subtitle">
         <a href="#" class="logo">Logo</a>
-        <a href="#" class="nav-link">Link 1</a>
-        <a href="#" class="nav-link">Link 2</a>
+        <a href="#" class="link">Link 1</a>
+        <a href="#" class="link">Link 2</a>
       </nav>
       <p>
         The default <code>nav</code> element has some basic styles as well.
       </p>
-      <nav class="bg">
+      <nav class="accent">
         <a href="#" class="logo">Logo</a>
-        <a href="#" class="nav-link">Link 1</a>
-        <a href="#" class="nav-link">Link 2</a>
+        <a href="#" class="link">Link 1</a>
+        <a href="#" class="link">Link 2</a>
       </nav>
       <p>
         It expands to full width. Throw it in the root of your body, and it will go fill the viewport. Throw it in an element, and it will be contained inside the element.
@@ -90,23 +90,22 @@
       </p>
       <ul>
         <li>
-          <h1 class="ib title">H1</h1>,
-          <h2 class="ib title">H2</h2>,
-          <h3 class="ib title">H3</h3>,
-          <h4 class="ib title">H4</h4>,
-          <h5 class="ib title">H5</h5>,
-          <h6 class="ib title">H6</h6>
+          <h1 class="d-ib title">H1</h1>,
+          <h2 class="d-ib title">H2</h2>,
+          <h3 class="d-ib title">H3</h3>,
+          <h4 class="d-ib title">H4</h4>,
+          <h5 class="d-ib title">H5</h5>,
+          <h6 class="d-ib title">H6</h6>
         </li>
         <li><code>a</code> <a href="#">Simple Link</a></li>
         <li><code>strong</code> <strong>Bold Text</strong></li>
         <li><code>em</code> <em>Italicized Text</em></li>
         <li><code>u</code> <u>Underlined Text</u></li>
         <li><code>.title</code> Removes Margins</li>
-        <li class="ta"> <code>.ta</code> Text Accent Font </li>
-        <li class="ttc"> <code>.ttc</code> Capitalized Text </li>
-        <li class="ttu"> <code>.ttu</code> Uppercase Text </li>
-        <li class="tc pt"> <code>.tc</code> Center Aligned Text </li>
-        <li class="tr bt pt"> <code>.tr</code> Right Aligned Text </li>
+        <li class="txtt-c"> <code>.txtt-c</code> Capitalized Text </li>
+        <li class="txtt-u"> <code>.txtt-u</code> Uppercase Text </li>
+        <li class="txt-c pt"> <code>.txt-c</code> Center Aligned Text </li>
+        <li class="txt-r bt pt"> <code>.txt-r</code> Right Aligned Text </li>
       </ul>
       <blockquote>A blockquote</blockquote>
     </css-doc>
@@ -122,8 +121,8 @@
         <p class="narr">
           <strong>Alternatively, <code>p.narr</code> is even smaller at 30em.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <p class="mw">
-          <strong>Add the generic <code>.mw</code> helper to make it full width.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="w-mw">
+          <strong>Add the generic <code>.w-mw</code> helper to make it full width.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
     </div>
@@ -134,35 +133,35 @@
 
       <mini-doc :code="docs.grid"></mini-doc>
 
-      <div class="row hsm">
-        <div class="col bg tc">1</div>
-        <div class="col bg tc">2</div>
+      <div class="row h-sm">
+        <div class="col accent txt-c">1</div>
+        <div class="col accent txt-c">2</div>
       </div>
       <div class="row">
-        <div class="col bg tc">1</div>
-        <div class="col bg tc">2</div>
-        <div class="col bg tc">3</div>
-        <div class="col bg tc">4</div>
+        <div class="col accent txt-c">1</div>
+        <div class="col accent txt-c">2</div>
+        <div class="col accent txt-c">3</div>
+        <div class="col accent txt-c">4</div>
       </div>
-      <div class="row hsm">
-        <div class="col bg tc">1</div>
-        <div class="col bg tc">2</div>
-        <div class="col bg tc">3</div>
-        <div class="col bg tc">4</div>
-        <div class="col bg tc">5</div>
-        <div class="col bg tc">6</div>
+      <div class="row h-sm">
+        <div class="col accent txt-c">1</div>
+        <div class="col accent txt-c">2</div>
+        <div class="col accent txt-c">3</div>
+        <div class="col accent txt-c">4</div>
+        <div class="col accent txt-c">5</div>
+        <div class="col accent txt-c">6</div>
       </div>
-      <div class="row hsm">
-        <div class="col bg tc">1</div>
-        <div class="col bg tc">2</div>
-        <div class="col bg tc">3</div>
-        <div class="col bg tc">4</div>
-        <div class="col bg tc">5</div>
-        <div class="col bg tc">6</div>
-        <div class="col bg tc">7</div>
-        <div class="col bg tc">8</div>
-        <div class="col bg tc">9</div>
-        <div class="col bg tc">10</div>
+      <div class="row h-sm">
+        <div class="col accent txt-c">1</div>
+        <div class="col accent txt-c">2</div>
+        <div class="col accent txt-c">3</div>
+        <div class="col accent txt-c">4</div>
+        <div class="col accent txt-c">5</div>
+        <div class="col accent txt-c">6</div>
+        <div class="col accent txt-c">7</div>
+        <div class="col accent txt-c">8</div>
+        <div class="col accent txt-c">9</div>
+        <div class="col accent txt-c">10</div>
       </div>
     </article>
 
@@ -211,14 +210,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col tc">
+        <div class="col txt-c">
           <a href="#" class="btn">.btn</a>
           <button>button</button>
           <input type="submit" value="input[type='submit']">
         </div>
       </div>
       <div class="row">
-        <div class="col tc">
+        <div class="col txt-c">
           <a href="#" class="btn otln">.btn.otln</a>
           <button class="otln">.otln</button>
           <input type="submit" class="otln" value="input.otln">
@@ -263,7 +262,7 @@
     </css-doc>
 
     <css-doc head="Tables" :code="docs.table">
-      <table class="u-full-width">
+      <table>
         <thead>
           <tr>
             <th>Variable</th>
@@ -279,23 +278,23 @@
             <td>Vegetables</td>
             <td>Cucumbers</td>
           </tr>
-          <tr class="hsm">
+          <tr class="h-sm">
             <td>Lorem</td>
             <td>Ipsum</td>
           </tr>
-          <tr class="hsm">
+          <tr class="h-sm">
             <td>lol</td>
             <td>what</td>
           </tr>
-          <tr class="hsm">
+          <tr class="h-sm">
             <td>example</td>
             <td>more example</td>
           </tr>
-          <tr class="hsm">
+          <tr class="h-sm">
             <td>I just want</td>
             <td>to make this table</td>
           </tr>
-          <tr class="hsm">
+          <tr class="h-sm">
             <td>align with</td>
             <td>the code sample</td>
           </tr>
@@ -319,7 +318,7 @@
   </section>
 
   <!-- FAQ -->
-  <section id="but" class="bg">
+  <section id="but" class="accent">
     <h1>But wait...</h1>
 
     <but wait="can I use a frontend framework with morr.css?">

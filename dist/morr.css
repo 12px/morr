@@ -452,7 +452,7 @@ input,
 select,
 button,
 textarea {
-  font: 300 1.5em/1.6 'Raleway', 'Arial', sans-serif;
+  font: 300 0.8em/1.6 'Raleway', 'Arial', sans-serif;
 }
 select,
 textarea,

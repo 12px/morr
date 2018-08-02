@@ -71,6 +71,7 @@ article {
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 10vw;
 }
 /* accent panel */
 .accent {
@@ -446,6 +447,12 @@ input[type="submit"].otln:hover,
 input[type="button"].otln:hover,
 input[type="reset"].otln:hover {
   color: #32a4f6;
+}
+input,
+select,
+button,
+textarea {
+  font: 300 1.5em/1.6 'Raleway', 'Arial', sans-serif;
 }
 select,
 textarea,

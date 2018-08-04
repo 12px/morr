@@ -2,7 +2,7 @@ header,
 section,
 footer {
   width: 100%;
-  padding: 10vh 10vw;
+  padding: @padding-section;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ article { margin: 5rem 0; }
 /* accent panel */
 .accent {
   color: @color-bg;
-  background-color: @color-nice;
+  background-color: @color-main;
 
   a, a:hover { color: @color-bg; }
 
@@ -39,16 +39,21 @@ article { margin: 5rem 0; }
   & input[type="button"]:hover,
   & input[type="reset"],
   & input[type="reset"]:hover {
-    color: @color-nice;
+    color: @color-main;
     border-color: @color-bg;
     background-color: @color-bg;
   }
 
   & .btn.otln,
+  & .btn.otln:hover,
   & button.otln,
+  & button.otln:hover,
   & input[type="submit"].otln,
+  & input[type="submit"].otln:hover,
   & input[type="button"].otln,
-  & input[type="reset"].otln {
+  & input[type="button"].otln:hover,
+  & input[type="reset"].otln,
+  & input[type="reset"].otln:hover {
     background: transparent;
     color: @color-bg;
     border-color: @color-bg;
@@ -99,9 +104,8 @@ article { margin: 5rem 0; }
 .b-a, .b-l, .b-t, .b-b, .b-r {
   border-color: @color-border;
 }
-.b-nice {
-  border-color: @color-nice;
-}
+.b-main { border-color: @color-main; }
+.b-nice { border-color: @color-nice; }
 
 /* positioning */
 .abs {

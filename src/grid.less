@@ -7,21 +7,45 @@
 
   &.ctr { align-items: center; }
   &.end { align-items: flex-end; }
+
+  &.sm .col {
+    margin: 0 0 0 2%;
+
+    &:not(.none):not([class*="w-"]) {
+      flex: 1;
+    }
+  }
 }
 
 .col {
+  width: 100%;
   padding: @padding-element;
   flex: 1 0 100%;
   margin: @padding-element 0;
 
   &.wide { flex: 2; } 
   &.none { flex: none; }
+
+  &[class*="w-"] {
+    flex: 1 0 100%;
+  }
+}
+
+@media @small-screen {
+  .sm .col {
+    width: auto;
+  }
 }
 
 @media @large-screen {
   .col {
     flex: 1;
+    width: auto;
     margin: 0 0 0 2%;
+
+    &[class*="w-"] {
+      flex: none;
+    }
   }
 
   .row > :first-child { 

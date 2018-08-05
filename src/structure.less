@@ -108,14 +108,12 @@ article { margin: 5rem 0; }
 .b-nice { border-color: @color-nice; }
 
 /* positioning */
-.abs {
-  position: absolute;
-
-  &.tl { top:    5vh;  left:  5vw; }
-  &.tr { top:    5vh;  right: 5vw; }
-  &.bl { bottom: 5vh;  left:  5vw; }
-  &.br { bottom: 5vh;  right: 5vw; }
-}
+.fix { position: fixed; }
+.abs { position: absolute; }
+.tl  { top:    5vh;  left:  5vw; }
+.tr  { top:    5vh;  right: 5vw; }
+.bl  { bottom: 5vh;  left:  5vw; }
+.br  { bottom: 5vh;  right: 5vw; }
 
 /* reveal on hover */
 .on-h:not(:hover) > .is-h {  opacity: 0; }

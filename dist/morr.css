@@ -179,6 +179,9 @@ article {
   margin-right: 1rem;
 }
 /* border */
+.rad {
+  border-radius: 0.25rem;
+}
 .dot {
   border-style: dotted;
 }
@@ -234,7 +237,7 @@ article {
   right: 5vw;
 }
 /* reveal on hover */
-.on-h:not(:hover) > .is-h {
+.on-h:not(:hover) .is-h {
   opacity: 0;
 }
 .is-h.hl {
